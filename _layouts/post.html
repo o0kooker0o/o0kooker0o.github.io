@@ -23,11 +23,6 @@ layout: default
 				{% endfor %}</p>
     </article>
     <ul class="post-near">
-    			{% if page.previous or page.next %}
-				{% if page.next %}
 				<li>上一篇: <a rel="next" href="{{ page.next.url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape }}</a></li>
-				{% if page.previous %}
 				<li>下一篇:<a rel="prev" href="{{ page.previous.url }}" title="{{ page.previous.title | escape }}">{{ page.previous.title | escape }}</a></li>
-				{% endif %}				
-			{% endif %}
     </ul>
