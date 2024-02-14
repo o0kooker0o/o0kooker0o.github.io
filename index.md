@@ -15,6 +15,8 @@ layout: default
             </li>
             <li>时间: <time datetime="{{ post.date | date:"%b %e, %Y" }}" itemprop="datePublished">{{ post.date | date:"%b %e, %Y" }}</time>
             </li>
+            <li>字节: {{ page.content.size }}
+            </li>
         </ul>
             <div class="post-content" itemprop="articleBody">
 		<blockquote>{{ post.description }}</blockquote>

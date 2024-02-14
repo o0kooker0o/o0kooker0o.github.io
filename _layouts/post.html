@@ -13,6 +13,8 @@ layout: default
             </li>
             <li>时间: <time datetime="{{ page.date | date: '%Y-%m-%d' }}" itemprop="datePublished">{{ page.date | date: '%Y-%m-%d' }}</time>
             </li>
+            <li>字节: {{ page.content.size }}
+            </li>
         </ul>
         <div class="post-content" itemprop="articleBody">
             {{ content }}
@@ -22,6 +24,7 @@ layout: default
     				<a href="/tags/#{{ tag }}">#{{ tag }}</a>
 				{% endfor %}</p>
     </article>
+    <div class="post-near">本文基于“<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" rel="license external nofollow" class="color:blue"><strong>CC BY-NC-SA 3.0</strong></a>”发布，仅用于学习和交流目的。非商业转载请注明作者、出处，并保留文章的完整链接。</div>
     <ul class="post-near">
 				<li>上一篇: <a rel="next" href="{{ page.next.url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape }}</a></li>
 				<li>下一篇:<a rel="prev" href="{{ page.previous.url }}" title="{{ page.previous.title | escape }}">{{ page.previous.title | escape }}</a></li>
