@@ -1,0 +1,19 @@
+auto: true
+markdown: rdiscount
+permalink: /:title
+production_url: https://bo.kooker.jp
+pygments: true
+paginate: 10
+
+title: Hi kooker
+tagline: 吃饱饭，干好活。
+author:
+  name: kooker
+  real_name: 马来
+  email: admin@kooker.jp
+  info: 已在而立之年
+  description: 胸无大志，悲观冷血，不苟言笑，聪明好学
+cdn_url: http://qiufupo.qiniudn.com/img/
+file_url: http://qiufupo.qiniudn.com/file/
+media_url: http://qiufupo.jd-app.com/file/
+# cdn_url: http://kooker.cdn.duapp.com/img/

@@ -1,0 +1,31 @@
+---
+layout: default
+title: 404
+---
+<div class="col-mb-12 col-tb-8 col-tb-offset-2">
+
+    <div class="error-page">
+  {% capture post_year1 %}{{ site.time | date: '%Y' }}{% endcapture %}
+<h2>&#160;&#160;{{ post_year1 }}</h2>
+<ul>
+{% for post in site.posts %}
+{% capture post_year2 %}{{ post.date | date: '%Y' }}{% endcapture %}
+{% if post_year1 != post_year2 %}
+{% assign post_year1 = post_year2 %}
+</ul>
+<h2>&#160;&#160;{{ post_year1 }}</h2>
+<ul>
+{% endif %}
+<li><span>{{ post.date | date: "%b %d, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+    </div>
+
+</div><!-- end #content-->
+<div>友情链接</div>
+<div>
+<ul>
+<li><a href="https://blog.kooker.jp" title="">Hi kooker</a></li>
+<li><a href="https://cdn.kooker.jp/" title="CDN" target="_blank">CDN</a></li>
+</ul>
+</div>

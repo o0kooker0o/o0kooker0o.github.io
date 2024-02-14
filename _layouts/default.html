@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="<?php $this->options->charset(); ?>">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.production_url }}/normalize.css">
+    <link rel="stylesheet" href="{{ site.production_url }}/grid.css">
+    <link rel="stylesheet" href="{{ site.production_url }}/style.css">
+    <link rel="alternate" type="application/rss+xml" title="订阅{{ site.title }}" href="{{ site.production_url }}/atom.xml" />
+</head>
+<body>
+
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="row">
+                    <div class="site-name col-mb-12 col-9">
+                                    <a id="logo" href="{{ site.production_url }}">{{ site.title }}</a>
+                    <p class="description">{{ site.tagline }}</p>
+                            </div>
+            <div class="col-mb-12">
+                <nav id="nav-menu" class="clearfix" role="navigation">
+                    <a href="{{ site.production_url }}">首页</a>
+                </nav>
+            </div>
+        </div><!-- end .row -->
+    </div>
+</header><!-- end #header -->
+<div id="body">
+    <div class="container">
+        <div class="row">
+<div class="col-mb-12 col-8" id="main" role="main">
+{{ content }}
+</div><!-- end #main-->
+        </div><!-- end .row -->
+    </div>
+</div><!-- end #body -->
+
+<footer id="footer" role="contentinfo">
+    <p><strong>&#169; {{ site.time | date: '%Y' }} {{ site.title }} All rights reserved.</strong></p>
+    <p>Thanks for <a href="https://typecho.org" title="Typecho" rel="external" target="_blank">Typecho</a> UI Designed, Powered by <a href="https://github.com/mojombo/jekyll" title="Jekyll is a simple, blog aware, static site generator." rel="external" target="_blank">Jekyll</a> and <a href="http://pages.github.com/" title="GitHub Pages" rel="external" target="_blank">Github</a>.</p>
+
+</footer><!-- end #footer -->
+</body>
+</html>
