@@ -15,7 +15,7 @@ permalink: /archive/
 <h2>&#160;&#160;{{ post_year1 }}</h2>
 <ul>
 {% endif %}
-<li class="sa_abstract"><h3><span>{{ post.date | date: "%b %d, %Y" }}</span> &raquo;  <a href="{{ post.url }}">{{ post.title }}</a> </h3></li>
+<blockquote><h3><span>{{ post.date | date: "%b %d, %Y" }}</span> &raquo;  <a href="{{ post.url }}">{{ post.title }}</a> </h3></blockquote>
 {% endfor %}
 </ul>
 </div>
