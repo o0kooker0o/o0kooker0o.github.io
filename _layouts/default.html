@@ -45,16 +45,18 @@
 		</section>
 
             <section class="widget">
-            <h3 class="widget-title">归档</h3>
+            <h3 class="widget-title">我的朋友们</h3>
             <ul class="widget-list">
-
+                <li><a href="https://blog.qiwei.org/">气总</a></li>
                 </ul>
         </section>
     
             <section class="widget">
             <h3 class="widget-title">其它</h3>
             <ul class="widget-list">
-                <li class="last"><a href="https://bbs.kooker.jp/">BBS</a></li>
+                <li><a href="https://bbs.kooker.jp/atom.xml">atom</a></li>
+                <li><a href="https://bbs.kooker.jp/sitemap.xml">sitemap</a></li>
+                <li><a href="https://bbs.kooker.jp/">BBS</a></li>
                 <li><a href="https://cdn.kooker.jp/feed/">CDN</a></li>
                 <li><a href="https://docs.kooker.jp/">DOCS</a></li>
             </ul>
@@ -66,8 +68,8 @@
 </div><!-- end #body -->
 
 <footer id="footer" role="contentinfo">
-    <p><strong>&#169; {{ site.time | date: '%Y' }} {{ site.title }} All rights reserved.</strong></p>
-    <p>Thanks for <a href="https://typecho.org" title="Typecho" rel="external" target="_blank">Typecho</a> UI Designed, Powered by <a href="https://github.com/mojombo/jekyll" title="Jekyll is a simple, blog aware, static site generator." rel="external" target="_blank">Jekyll</a> and <a href="http://pages.github.com/" title="GitHub Pages" rel="external" target="_blank">Github</a>.</p>
+    <p><strong>&#169; {{ site.time | date: '%Y' }}<a href="{{ site.production_url }}"> {{ site.title }}</a> All rights reserved.</strong></p>
+    <p>Thanks for <a href="https://typecho.org" title="Typecho" rel="external" target="_blank">Typecho</a> UI Designed, Powered by <a href="https://github.com/mojombo/jekyll" title="Jekyll is a simple, blog aware, static site generator." rel="external" target="_blank">Jekyll</a> and <a href="http://pages.github.com/" title="GitHub Pages" rel="external" target="_blank">Github Pages</a>.</p>
 
 </footer><!-- end #footer -->
 </body>
