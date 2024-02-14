@@ -1,7 +1,7 @@
 auto: true
 markdown: rdiscount
 permalink: /:title
-production_url: https://bo.kooker.jp
+production_url: https://hi.kooker.jp
 pygments: true
 paginate: 10
 
