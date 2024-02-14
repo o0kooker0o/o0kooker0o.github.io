@@ -22,7 +22,7 @@
                             </div>
             <div class="col-mb-12">
                 <nav id="nav-menu" class="clearfix" role="navigation">
-                    <a href="{{ site.production_url }}">首页</a>
+                    <a href="{{ site.production_url }}">首页</a><a href="/archive/">存档</a>
                 </nav>
             </div>
         </div><!-- end .row -->
@@ -32,10 +32,9 @@
     <div class="container">
         <div class="row">
 <div class="col-mb-12 col-8" id="main" role="main">
-
+        {{ content }}
 </div><!-- end #main-->
         </div><!-- end .row -->
-        {{ content }}
     </div>
 </div><!-- end #body -->
 
