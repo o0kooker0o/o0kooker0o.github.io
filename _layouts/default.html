@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="<?php $this->options->charset(); ?>">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
+    <meta name="keywords" content=" " />
+    <meta name="generator" content="Jekyll" />
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.production_url }}/normalize.css">
     <link rel="stylesheet" href="{{ site.production_url }}/grid.css">
