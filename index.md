@@ -18,6 +18,6 @@ layout: default
         </ul>
             <div class="post-content" itemprop="articleBody">
 		<blockquote>{{ post.description }}</blockquote>
-			{% endfor %}</div>
+			</div>
         </article>
-
+			{% endfor %}</div>
